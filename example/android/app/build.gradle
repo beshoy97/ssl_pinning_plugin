@@ -58,16 +58,16 @@ flutter {
     source '../..'
 }
 
-subprojects {
-    afterEvaluate {project ->
-        if (project.hasProperty("android")) {
-            android {
-                compileSdkVersion 28
-                buildToolsVersion '29.0.2'
-            }
-        }
-    }
-}
+// subprojects {
+//     afterEvaluate {project ->
+//         if (project.hasProperty("android")) {
+//             android {
+//                 compileSdkVersion 28
+//                 buildToolsVersion '29.0.2'
+//             }
+//         }
+//     }
+// }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
